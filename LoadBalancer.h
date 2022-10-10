@@ -4,15 +4,17 @@
 #include <vector>
 #include <queue>
 
+using namespace std;
+
 class LoadBalancer{
     public:
-        queue<Request*> requestQ;
-        void addRequest(Request* request){
+        queue<shared_ptr<Request>> requestQ;
+        void addRequest(shared_ptr<Request> request){
             requestQ.push(request);
         }
-        Request* getRequest(){
+        shared_ptr<Request> getRequest(){
             if(requestQ.size() != 0){
-                Request* toRet = requestQ.front();
+                shared_ptr<Request> toRet = requestQ.front();
                 requestQ.pop();
                 return toRet;
             }
