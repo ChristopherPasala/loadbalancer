@@ -5,9 +5,14 @@
 class Webserver{
     private:
         shared_ptr<Request> request;
-        //signify no job currently
+
+        //signify no job currently in intial state
         int jobStart =-1;
-        string name; 
+        
+        //for keeping track of which webserver is which
+        string name;
+
+        //used to determine if webserver has already finished or not
         bool finished = true;
     public:
         Webserver(){
