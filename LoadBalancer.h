@@ -5,26 +5,28 @@
 #include <queue>
 
 class LoadBalancer{
-    queue<Request> requestQ;
-
-    void addRequest(Request request){
-        requestQ.push(request);
-    }
-    
-    Request getRequest(){
-        if(requestQ.size() != 0){
-            Request toRet = requestQ.front();
-            requestQ.pop();
-            return toRet;
+    public:
+        queue<Request*> requestQ;
+        void addRequest(Request* request){
+            requestQ.push(request);
         }
-    }
-
-    bool isQueueEmpty(){
-        if (requestQ.size() == 0){
-            return true;
+        Request* getRequest(){
+            if(requestQ.size() != 0){
+                Request* toRet = requestQ.front();
+                requestQ.pop();
+                return toRet;
+            }
+            return nullptr;
         }
-        return false;
-    }
+        bool isQueueEmpty(){
+            if (requestQ.size() == 0){
+                return true;
+            }
+            return false;
+        }
+        int getSize(){
+            return requestQ.size();
+        }
 };
 
 #endif

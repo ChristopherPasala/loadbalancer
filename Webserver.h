@@ -5,7 +5,8 @@
 class Webserver{
     private:
         Request request;
-        int jobStart;
+        //signify no job currently
+        int jobStart = -1;
         string name; 
     public:
         Webserver(){
@@ -23,7 +24,11 @@ class Webserver{
             return jobStart;
         }
         bool isJobDone(int currentTime){
-            if((jobStart+request.jobTime)< currentTime)   {
+            if(jobStart == -1){
+                return true;
+            }
+            cout << this->getName() << " jobendTime: "<< jobStart+request.jobTime << " currenttime: " << currentTime << endl;
+            if((jobStart+request.jobTime) < currentTime)   {
                 return true;
             }
             return false;
