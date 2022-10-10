@@ -12,6 +12,7 @@ class LoadBalancer{
         void addRequest(shared_ptr<Request> request){
             requestQ.push(request);
         }
+        
         shared_ptr<Request> getRequest(){
             if(requestQ.size() != 0){
                 shared_ptr<Request> toRet = requestQ.front();

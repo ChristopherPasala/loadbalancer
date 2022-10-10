@@ -20,7 +20,6 @@ int main(int argc, char* argv[]){
         if(req->jobTime < min){
             min = req->jobTime;
         }
-        cout << "Request created with jobtime of " <<req->jobTime << " and inIP " << req->inIP << endl;
         loadBalancer.addRequest(req);
     }
     cout << endl;
@@ -34,24 +33,33 @@ int main(int argc, char* argv[]){
     
     for(int i = 0; i < totalTime; i++){
         serversStillWorking = (i == 0) ? true : false;
-            for(shared_ptr<Webserver> webserver : webservers){
-                if(webserver->isJobDone(i)){
-                    if(i != 0 && !webserver->getFinished()){
-                        cout << webserver->getName() << " has finished job " <<webserver->getRequest()->inIP << " to "<<webserver->getRequest()->outIP <<" at time " << i <<  endl;
-                        webserver->setFinished(true);
-                    }
-                    if(!loadBalancer.isQueueEmpty()){
-                        webserver->setRequest(i,loadBalancer.getRequest());
-                        webserver->setFinished(false);
-                    }
+        for(shared_ptr<Webserver> webserver : webservers){
+            if(webserver->isJobDone(i)){
+                if(i != 0 && !webserver->getFinished()){
+                    cout << webserver->getName() << " has finished job " <<webserver->getRequest()->inIP << " to "<<webserver->getRequest()->outIP <<" at time " << i <<  endl;
+                    webserver->setFinished(true);
                 }
-                else{
-                    serversStillWorking = true;
+                if(!loadBalancer.isQueueEmpty()){
+                    webserver->setRequest(i,loadBalancer.getRequest());
+                    webserver->setFinished(false);
                 }
             }
-            if(!serversStillWorking){
-                break;
+            else{
+                serversStillWorking = true;
             }
         }
+        if(!serversStillWorking){
+            break;
+        }
+
+
+        // add random new request 5% of a new request each iteration
+        if(rand() % 100 <= 5){
+            
+            shared_ptr<Request> req = shared_ptr<Request> (new Request());
+            cout << "new request recieved from " << req->inIP << endl;
+            loadBalancer.addRequest(req);
+        }
+    }
     return 1;
 }
