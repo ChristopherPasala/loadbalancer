@@ -4,8 +4,15 @@ using namespace std;
 
 int main(int argc, char* argv[]){
     // TODO: get from user
-    int totalTime = 1000;
-    int webserverSize = 30;
+    int totalTime = 10000;
+    cout << "How long should be the system run?" << endl;
+    cin >> totalTime;
+    int webserverSize = 5;
+    cout << "How many webservers should the system run?" << endl;
+    cin >> webserverSize;
+    int newRequestP = 5;
+    cout << "What is the percent chance of a new request occuring each system time unit?" << endl;
+    cin >> newRequestP;
     int requestSize = webserverSize*2;
     
     bool serversStillWorking = false;
@@ -53,13 +60,14 @@ int main(int argc, char* argv[]){
         }
 
 
-        // add random new request 5% of a new request each iteration
-        if(rand() % 100 <= 5){
+        // add random new request newRequestP% of a new request each iteration
+        if(rand() % 100 <= newRequestP){
             
             shared_ptr<Request> req = shared_ptr<Request> (new Request());
-            cout << "new request recieved from " << req->inIP << endl;
+            cout << "New request recieved from " << req->inIP << " to " << req->outIP <<"at time "<< i<< endl;
             loadBalancer.addRequest(req);
         }
     }
+    cout << "Final Request queue size is "<< loadBalancer.getSize()<< endl;
     return 1;
 }
