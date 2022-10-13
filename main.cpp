@@ -10,7 +10,7 @@ using namespace std;
  * \subsection  Usage
  * 
  * The user can run the command  'make clean all' after pulling the corresponding branch into their local directory. After running that command, the user can then run the executable './main' in order to run the program.
- * 
+ * Once the program has been executed, the user will be able to input total run time, amount of webservers and percentage of new request each clock cycle.
  * 
  * 
  */
@@ -85,7 +85,7 @@ int main(int argc, char* argv[]){
         if(rand() % 100 <= newRequestP){
             
             shared_ptr<Request> req = shared_ptr<Request> (new Request());
-            cout << "New request recieved from " << req->inIP << " to " << req->outIP <<" at time "<< i<< endl;
+            //cout << "New request recieved from " << req->inIP << " to " << req->outIP <<" at time "<< i<< endl;
             loadBalancer.addRequest(req);
         }
     }
