@@ -1,0 +1,185 @@
+\hypertarget{classWebserver}{}\section{Webserver Class Reference}
+\label{classWebserver}\index{Webserver@{Webserver}}
+
+
+Represents the \hyperlink{classWebserver}{Webserver} object which processes a \hyperlink{classRequest}{Request}.  
+
+
+
+
+{\ttfamily \#include $<$Webserver.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWebserver_ac2a6f51bcc54efaaf5f4773a7c24f009}\label{classWebserver_ac2a6f51bcc54efaaf5f4773a7c24f009}} 
+\hyperlink{classWebserver_ac2a6f51bcc54efaaf5f4773a7c24f009}{Webserver} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classWebserver_ac66530e2c75f4489f3fd0a37d1265a21}{Webserver} (string name)
+\begin{DoxyCompactList}\small\item\em Overwritten constructor for naming a new \hyperlink{classWebserver}{Webserver} object. \end{DoxyCompactList}\item 
+void \hyperlink{classWebserver_aa4a2355e2a69cd811173efe85b158525}{set\+Name} (string name)
+\begin{DoxyCompactList}\small\item\em Set the name of the \hyperlink{classWebserver}{Webserver} object. \end{DoxyCompactList}\item 
+bool \hyperlink{classWebserver_a2244e2e2e5f992498a17b5caa90af73b}{get\+Finished} ()
+\begin{DoxyCompactList}\small\item\em Returns the state of whether the \hyperlink{classWebserver}{Webserver} object is finished working on the \hyperlink{classRequest}{Request} object or not. \end{DoxyCompactList}\item 
+void \hyperlink{classWebserver_a385a32307e09550c301660581bada2e5}{set\+Finished} (bool val)
+\begin{DoxyCompactList}\small\item\em Set the state of whether the \hyperlink{classWebserver}{Webserver} object is finished working on the request or not. \end{DoxyCompactList}\item 
+string \hyperlink{classWebserver_a7947099345655d9deceb05b37e06978c}{get\+Name} ()
+\begin{DoxyCompactList}\small\item\em Get the Name of \hyperlink{classWebserver}{Webserver} object. \end{DoxyCompactList}\item 
+int \hyperlink{classWebserver_ad1ee2d5ae63d1d2674156eb29c3f92ee}{getjob\+Start} ()
+\begin{DoxyCompactList}\small\item\em Get the time at which the \hyperlink{classRequest}{Request} object started to be process by the \hyperlink{classWebserver}{Webserver}. \end{DoxyCompactList}\item 
+bool \hyperlink{classWebserver_a25d0b2f418c84058bb49408aacee9745}{is\+Job\+Done} (int current\+Time)
+\begin{DoxyCompactList}\small\item\em Returns if the job being processed has finished. \end{DoxyCompactList}\item 
+void \hyperlink{classWebserver_af579724e554c818287932988c0de111e}{set\+Request} (int current\+Time, shared\+\_\+ptr$<$ \hyperlink{classRequest}{Request} $>$ request)
+\begin{DoxyCompactList}\small\item\em Assigns a \hyperlink{classRequest}{Request} object to be processed by a \hyperlink{classWebserver}{Webserver} object. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \hyperlink{classRequest}{Request} $>$ \hyperlink{classWebserver_ad885e697f7623ae3b775664406f57cd0}{get\+Request} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classRequest}{Request} object being processed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents the \hyperlink{classWebserver}{Webserver} object which processes a \hyperlink{classRequest}{Request}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWebserver_ac66530e2c75f4489f3fd0a37d1265a21}\label{classWebserver_ac66530e2c75f4489f3fd0a37d1265a21}} 
+\index{Webserver@{Webserver}!Webserver@{Webserver}}
+\index{Webserver@{Webserver}!Webserver@{Webserver}}
+\subsubsection{\texorpdfstring{Webserver()}{Webserver()}}
+{\footnotesize\ttfamily Webserver\+::\+Webserver (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overwritten constructor for naming a new \hyperlink{classWebserver}{Webserver} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWebserver_a2244e2e2e5f992498a17b5caa90af73b}\label{classWebserver_a2244e2e2e5f992498a17b5caa90af73b}} 
+\index{Webserver@{Webserver}!get\+Finished@{get\+Finished}}
+\index{get\+Finished@{get\+Finished}!Webserver@{Webserver}}
+\subsubsection{\texorpdfstring{get\+Finished()}{getFinished()}}
+{\footnotesize\ttfamily bool Webserver\+::get\+Finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the state of whether the \hyperlink{classWebserver}{Webserver} object is finished working on the \hyperlink{classRequest}{Request} object or not. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWebserver_ad1ee2d5ae63d1d2674156eb29c3f92ee}\label{classWebserver_ad1ee2d5ae63d1d2674156eb29c3f92ee}} 
+\index{Webserver@{Webserver}!getjob\+Start@{getjob\+Start}}
+\index{getjob\+Start@{getjob\+Start}!Webserver@{Webserver}}
+\subsubsection{\texorpdfstring{getjob\+Start()}{getjobStart()}}
+{\footnotesize\ttfamily int Webserver\+::getjob\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the time at which the \hyperlink{classRequest}{Request} object started to be process by the \hyperlink{classWebserver}{Webserver}. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWebserver_a7947099345655d9deceb05b37e06978c}\label{classWebserver_a7947099345655d9deceb05b37e06978c}} 
+\index{Webserver@{Webserver}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Webserver@{Webserver}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string Webserver\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Name of \hyperlink{classWebserver}{Webserver} object. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWebserver_ad885e697f7623ae3b775664406f57cd0}\label{classWebserver_ad885e697f7623ae3b775664406f57cd0}} 
+\index{Webserver@{Webserver}!get\+Request@{get\+Request}}
+\index{get\+Request@{get\+Request}!Webserver@{Webserver}}
+\subsubsection{\texorpdfstring{get\+Request()}{getRequest()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$\hyperlink{classRequest}{Request}$>$ Webserver\+::get\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the \hyperlink{classRequest}{Request} object being processed. 
+
+\begin{DoxyReturn}{Returns}
+shared\+\_\+ptr$<$\+Request$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWebserver_a25d0b2f418c84058bb49408aacee9745}\label{classWebserver_a25d0b2f418c84058bb49408aacee9745}} 
+\index{Webserver@{Webserver}!is\+Job\+Done@{is\+Job\+Done}}
+\index{is\+Job\+Done@{is\+Job\+Done}!Webserver@{Webserver}}
+\subsubsection{\texorpdfstring{is\+Job\+Done()}{isJobDone()}}
+{\footnotesize\ttfamily bool Webserver\+::is\+Job\+Done (\begin{DoxyParamCaption}\item[{int}]{current\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns if the job being processed has finished. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWebserver_a385a32307e09550c301660581bada2e5}\label{classWebserver_a385a32307e09550c301660581bada2e5}} 
+\index{Webserver@{Webserver}!set\+Finished@{set\+Finished}}
+\index{set\+Finished@{set\+Finished}!Webserver@{Webserver}}
+\subsubsection{\texorpdfstring{set\+Finished()}{setFinished()}}
+{\footnotesize\ttfamily void Webserver\+::set\+Finished (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the state of whether the \hyperlink{classWebserver}{Webserver} object is finished working on the request or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWebserver_aa4a2355e2a69cd811173efe85b158525}\label{classWebserver_aa4a2355e2a69cd811173efe85b158525}} 
+\index{Webserver@{Webserver}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Webserver@{Webserver}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void Webserver\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the name of the \hyperlink{classWebserver}{Webserver} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWebserver_af579724e554c818287932988c0de111e}\label{classWebserver_af579724e554c818287932988c0de111e}} 
+\index{Webserver@{Webserver}!set\+Request@{set\+Request}}
+\index{set\+Request@{set\+Request}!Webserver@{Webserver}}
+\subsubsection{\texorpdfstring{set\+Request()}{setRequest()}}
+{\footnotesize\ttfamily void Webserver\+::set\+Request (\begin{DoxyParamCaption}\item[{int}]{current\+Time,  }\item[{shared\+\_\+ptr$<$ \hyperlink{classRequest}{Request} $>$}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns a \hyperlink{classRequest}{Request} object to be processed by a \hyperlink{classWebserver}{Webserver} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Time} & \\
+\hline
+{\em request} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Webserver.\+h\end{DoxyCompactItemize}

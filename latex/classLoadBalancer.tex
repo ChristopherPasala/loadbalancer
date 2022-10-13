@@ -1,0 +1,95 @@
+\hypertarget{classLoadBalancer}{}\section{Load\+Balancer Class Reference}
+\label{classLoadBalancer}\index{Load\+Balancer@{Load\+Balancer}}
+
+
+\hyperlink{classLoadBalancer}{Load\+Balancer} class that hold the request queue along with capabalities to manipulate it.  
+
+
+
+
+{\ttfamily \#include $<$Load\+Balancer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classLoadBalancer_a2efdf7d7e22b78a284eb0031b109f0b0}{add\+Request} (shared\+\_\+ptr$<$ \hyperlink{classRequest}{Request} $>$ request)
+\begin{DoxyCompactList}\small\item\em Used for adding \hyperlink{classRequest}{Request} shared pointer to the request queue. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \hyperlink{classRequest}{Request} $>$ \hyperlink{classLoadBalancer_aa79b2225c613810e695c2b07b38e93c2}{get\+Request} ()
+\begin{DoxyCompactList}\small\item\em Used to get a \hyperlink{classRequest}{Request} shared pointer from the queue. \end{DoxyCompactList}\item 
+bool \hyperlink{classLoadBalancer_a27b39e3bd5ac47e6845ec63c73cbe436}{is\+Queue\+Empty} ()
+\begin{DoxyCompactList}\small\item\em Used to check if the \hyperlink{classRequest}{Request} queue is empty. \end{DoxyCompactList}\item 
+int \hyperlink{classLoadBalancer_ae410e0a4d5fe01f6aaebd34c7edb4a54}{get\+Size} ()
+\begin{DoxyCompactList}\small\item\em Used to get the size of the \hyperlink{classRequest}{Request} queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLoadBalancer_a40a5b5f052758a9dd98b6e3d293cb831}\label{classLoadBalancer_a40a5b5f052758a9dd98b6e3d293cb831}} 
+queue$<$ shared\+\_\+ptr$<$ \hyperlink{classRequest}{Request} $>$ $>$ {\bfseries requestQ}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classLoadBalancer}{Load\+Balancer} class that hold the request queue along with capabalities to manipulate it. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLoadBalancer_a2efdf7d7e22b78a284eb0031b109f0b0}\label{classLoadBalancer_a2efdf7d7e22b78a284eb0031b109f0b0}} 
+\index{Load\+Balancer@{Load\+Balancer}!add\+Request@{add\+Request}}
+\index{add\+Request@{add\+Request}!Load\+Balancer@{Load\+Balancer}}
+\subsubsection{\texorpdfstring{add\+Request()}{addRequest()}}
+{\footnotesize\ttfamily void Load\+Balancer\+::add\+Request (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \hyperlink{classRequest}{Request} $>$}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Used for adding \hyperlink{classRequest}{Request} shared pointer to the request queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLoadBalancer_aa79b2225c613810e695c2b07b38e93c2}\label{classLoadBalancer_aa79b2225c613810e695c2b07b38e93c2}} 
+\index{Load\+Balancer@{Load\+Balancer}!get\+Request@{get\+Request}}
+\index{get\+Request@{get\+Request}!Load\+Balancer@{Load\+Balancer}}
+\subsubsection{\texorpdfstring{get\+Request()}{getRequest()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$\hyperlink{classRequest}{Request}$>$ Load\+Balancer\+::get\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Used to get a \hyperlink{classRequest}{Request} shared pointer from the queue. 
+
+\begin{DoxyReturn}{Returns}
+shared\+\_\+ptr$<$\+Request$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLoadBalancer_ae410e0a4d5fe01f6aaebd34c7edb4a54}\label{classLoadBalancer_ae410e0a4d5fe01f6aaebd34c7edb4a54}} 
+\index{Load\+Balancer@{Load\+Balancer}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!Load\+Balancer@{Load\+Balancer}}
+\subsubsection{\texorpdfstring{get\+Size()}{getSize()}}
+{\footnotesize\ttfamily int Load\+Balancer\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Used to get the size of the \hyperlink{classRequest}{Request} queue. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLoadBalancer_a27b39e3bd5ac47e6845ec63c73cbe436}\label{classLoadBalancer_a27b39e3bd5ac47e6845ec63c73cbe436}} 
+\index{Load\+Balancer@{Load\+Balancer}!is\+Queue\+Empty@{is\+Queue\+Empty}}
+\index{is\+Queue\+Empty@{is\+Queue\+Empty}!Load\+Balancer@{Load\+Balancer}}
+\subsubsection{\texorpdfstring{is\+Queue\+Empty()}{isQueueEmpty()}}
+{\footnotesize\ttfamily bool Load\+Balancer\+::is\+Queue\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Used to check if the \hyperlink{classRequest}{Request} queue is empty. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Load\+Balancer.\+h\end{DoxyCompactItemize}
