@@ -9,7 +9,7 @@ using namespace std;
 /**
  * @brief LoadBalancer class that hold the request queue along with capabalities to manipulate it
  * 
- * 
+ *  
  */
 class LoadBalancer{
     public:

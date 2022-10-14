@@ -4,7 +4,10 @@
 
 /**
  * @brief Represents the Webserver object which processes a Request
- * 
+ * **Private Attributes** \n
+ * jobStart :  The time the webserver started the job \n 
+ * name : The IP recieving the request \n 
+ * finished : The time to complete a job \n
  */
 class Webserver{
     private:

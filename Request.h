@@ -7,7 +7,12 @@
 
 using namespace std;
 /**
- * @brief Represents a request workload
+ * @brief Represents a request workload \n 
+ * 
+ * **Public Attributes** \n
+ * inIp :  The IP sending the request \n 
+ * outIP : The IP recieving the request \n 
+ * jobTime : The time to complete a job \n
  * 
  */
 class Request{
