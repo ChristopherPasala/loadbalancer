@@ -3,11 +3,11 @@
 #include "Request.h"
 
 /**
- * @brief Represents the Webserver object which processes a Request
+ * @brief Represents the Webserver object which processes a Request \n
  * **Private Attributes** \n
- * jobStart :  The time the webserver started the job \n 
- * name : The IP recieving the request \n 
- * finished : The time to complete a job \n
+ * jobStart :  An int containing the time the webserver started the job \n 
+ * name : A string containing the name of the webserver \n 
+ * finished : Boolean value of whether the webserver is in a working state or not\n
  */
 class Webserver{
     private:

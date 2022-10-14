@@ -66,7 +66,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Represents the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request. ">Webserver</a> object which processes a <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a>.  
+<p>Represents the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request  Private Attributes  jobStart : An int cont...">Webserver</a> object which processes a <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a> <br />
+<b>Private Attributes</b> <br />
+jobStart : An int containing the time the webserver started the job <br />
+ name : A string containing the name of the webserver <br />
+ finished : Boolean value of whether the webserver is in a working state or not<br />
+.  
  <a href="classWebserver.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Webserver_8h_source.html">Webserver.h</a>&gt;</code></p>
@@ -78,35 +83,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac2a6f51bcc54efaaf5f4773a7c24f009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
 <tr class="separator:ac2a6f51bcc54efaaf5f4773a7c24f009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac66530e2c75f4489f3fd0a37d1265a21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWebserver.html#ac66530e2c75f4489f3fd0a37d1265a21">Webserver</a> (string name)</td></tr>
-<tr class="memdesc:ac66530e2c75f4489f3fd0a37d1265a21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwritten constructor for naming a new <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request. ">Webserver</a> object.  <a href="#ac66530e2c75f4489f3fd0a37d1265a21">More...</a><br /></td></tr>
+<tr class="memdesc:ac66530e2c75f4489f3fd0a37d1265a21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwritten constructor for naming a new <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request  Private Attributes  jobStart : An int cont...">Webserver</a> object.  <a href="#ac66530e2c75f4489f3fd0a37d1265a21">More...</a><br /></td></tr>
 <tr class="separator:ac66530e2c75f4489f3fd0a37d1265a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4a2355e2a69cd811173efe85b158525"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWebserver.html#aa4a2355e2a69cd811173efe85b158525">setName</a> (string name)</td></tr>
-<tr class="memdesc:aa4a2355e2a69cd811173efe85b158525"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name of the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request. ">Webserver</a> object.  <a href="#aa4a2355e2a69cd811173efe85b158525">More...</a><br /></td></tr>
+<tr class="memdesc:aa4a2355e2a69cd811173efe85b158525"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name of the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request  Private Attributes  jobStart : An int cont...">Webserver</a> object.  <a href="#aa4a2355e2a69cd811173efe85b158525">More...</a><br /></td></tr>
 <tr class="separator:aa4a2355e2a69cd811173efe85b158525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2244e2e2e5f992498a17b5caa90af73b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWebserver.html#a2244e2e2e5f992498a17b5caa90af73b">getFinished</a> ()</td></tr>
-<tr class="memdesc:a2244e2e2e5f992498a17b5caa90af73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of whether the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request. ">Webserver</a> object is finished working on the <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a> object or not.  <a href="#a2244e2e2e5f992498a17b5caa90af73b">More...</a><br /></td></tr>
+<tr class="memdesc:a2244e2e2e5f992498a17b5caa90af73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of whether the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request  Private Attributes  jobStart : An int cont...">Webserver</a> object is finished working on the <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a> object or not.  <a href="#a2244e2e2e5f992498a17b5caa90af73b">More...</a><br /></td></tr>
 <tr class="separator:a2244e2e2e5f992498a17b5caa90af73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a385a32307e09550c301660581bada2e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWebserver.html#a385a32307e09550c301660581bada2e5">setFinished</a> (bool val)</td></tr>
-<tr class="memdesc:a385a32307e09550c301660581bada2e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the state of whether the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request. ">Webserver</a> object is finished working on the request or not.  <a href="#a385a32307e09550c301660581bada2e5">More...</a><br /></td></tr>
+<tr class="memdesc:a385a32307e09550c301660581bada2e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the state of whether the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request  Private Attributes  jobStart : An int cont...">Webserver</a> object is finished working on the request or not.  <a href="#a385a32307e09550c301660581bada2e5">More...</a><br /></td></tr>
 <tr class="separator:a385a32307e09550c301660581bada2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7947099345655d9deceb05b37e06978c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWebserver.html#a7947099345655d9deceb05b37e06978c">getName</a> ()</td></tr>
-<tr class="memdesc:a7947099345655d9deceb05b37e06978c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Name of <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request. ">Webserver</a> object.  <a href="#a7947099345655d9deceb05b37e06978c">More...</a><br /></td></tr>
+<tr class="memdesc:a7947099345655d9deceb05b37e06978c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Name of <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request  Private Attributes  jobStart : An int cont...">Webserver</a> object.  <a href="#a7947099345655d9deceb05b37e06978c">More...</a><br /></td></tr>
 <tr class="separator:a7947099345655d9deceb05b37e06978c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1ee2d5ae63d1d2674156eb29c3f92ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWebserver.html#ad1ee2d5ae63d1d2674156eb29c3f92ee">getjobStart</a> ()</td></tr>
-<tr class="memdesc:ad1ee2d5ae63d1d2674156eb29c3f92ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time at which the <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a> object started to be process by the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request. ">Webserver</a>.  <a href="#ad1ee2d5ae63d1d2674156eb29c3f92ee">More...</a><br /></td></tr>
+<tr class="memdesc:ad1ee2d5ae63d1d2674156eb29c3f92ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time at which the <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a> object started to be process by the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request  Private Attributes  jobStart : An int cont...">Webserver</a>.  <a href="#ad1ee2d5ae63d1d2674156eb29c3f92ee">More...</a><br /></td></tr>
 <tr class="separator:ad1ee2d5ae63d1d2674156eb29c3f92ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25d0b2f418c84058bb49408aacee9745"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWebserver.html#a25d0b2f418c84058bb49408aacee9745">isJobDone</a> (int currentTime)</td></tr>
 <tr class="memdesc:a25d0b2f418c84058bb49408aacee9745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if the job being processed has finished.  <a href="#a25d0b2f418c84058bb49408aacee9745">More...</a><br /></td></tr>
 <tr class="separator:a25d0b2f418c84058bb49408aacee9745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af579724e554c818287932988c0de111e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWebserver.html#af579724e554c818287932988c0de111e">setRequest</a> (int currentTime, shared_ptr&lt; <a class="el" href="classRequest.html">Request</a> &gt; request)</td></tr>
-<tr class="memdesc:af579724e554c818287932988c0de111e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a> object to be processed by a <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request. ">Webserver</a> object.  <a href="#af579724e554c818287932988c0de111e">More...</a><br /></td></tr>
+<tr class="memdesc:af579724e554c818287932988c0de111e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a> object to be processed by a <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request  Private Attributes  jobStart : An int cont...">Webserver</a> object.  <a href="#af579724e554c818287932988c0de111e">More...</a><br /></td></tr>
 <tr class="separator:af579724e554c818287932988c0de111e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad885e697f7623ae3b775664406f57cd0"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classRequest.html">Request</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWebserver.html#ad885e697f7623ae3b775664406f57cd0">getRequest</a> ()</td></tr>
 <tr class="memdesc:ad885e697f7623ae3b775664406f57cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a> object being processed.  <a href="#ad885e697f7623ae3b775664406f57cd0">More...</a><br /></td></tr>
 <tr class="separator:ad885e697f7623ae3b775664406f57cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request. ">Webserver</a> object which processes a <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a>. </p>
+<div class="textblock"><p>Represents the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request  Private Attributes  jobStart : An int cont...">Webserver</a> object which processes a <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a> <br />
+<b>Private Attributes</b> <br />
+jobStart : An int containing the time the webserver started the job <br />
+ name : A string containing the name of the webserver <br />
+ finished : Boolean value of whether the webserver is in a working state or not<br />
+. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac66530e2c75f4489f3fd0a37d1265a21"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac66530e2c75f4489f3fd0a37d1265a21">&#9670;&nbsp;</a></span>Webserver()</h2>
@@ -132,7 +142,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Overwritten constructor for naming a new <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request. ">Webserver</a> object. </p>
+<p>Overwritten constructor for naming a new <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request  Private Attributes  jobStart : An int cont...">Webserver</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td></td></tr>
@@ -166,7 +176,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the state of whether the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request. ">Webserver</a> object is finished working on the <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a> object or not. </p>
+<p>Returns the state of whether the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request  Private Attributes  jobStart : An int cont...">Webserver</a> object is finished working on the <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a> object or not. </p>
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
 false </dd></dl>
@@ -196,7 +206,7 @@ false </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Get the time at which the <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a> object started to be process by the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request. ">Webserver</a>. </p>
+<p>Get the time at which the <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a> object started to be process by the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request  Private Attributes  jobStart : An int cont...">Webserver</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
 
 </div>
@@ -224,7 +234,7 @@ false </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Get the Name of <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request. ">Webserver</a> object. </p>
+<p>Get the Name of <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request  Private Attributes  jobStart : An int cont...">Webserver</a> object. </p>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
 </div>
@@ -318,7 +328,7 @@ false </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Set the state of whether the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request. ">Webserver</a> object is finished working on the request or not. </p>
+<p>Set the state of whether the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request  Private Attributes  jobStart : An int cont...">Webserver</a> object is finished working on the request or not. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">val</td><td></td></tr>
@@ -352,7 +362,7 @@ false </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Set the name of the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request. ">Webserver</a> object. </p>
+<p>Set the name of the <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request  Private Attributes  jobStart : An int cont...">Webserver</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td></td></tr>
@@ -396,7 +406,7 @@ false </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Assigns a <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a> object to be processed by a <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request. ">Webserver</a> object. </p>
+<p>Assigns a <a class="el" href="classRequest.html" title="Represents a request workload  . ">Request</a> object to be processed by a <a class="el" href="classWebserver.html" title="Represents the Webserver object which processes a Request  Private Attributes  jobStart : An int cont...">Webserver</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">currentTime</td><td></td></tr>

@@ -10,9 +10,9 @@ using namespace std;
  * @brief Represents a request workload \n 
  * 
  * **Public Attributes** \n
- * inIp :  The IP sending the request \n 
- * outIP : The IP recieving the request \n 
- * jobTime : The time to complete a job \n
+ * inIp :  A string containing the IP sending the request \n 
+ * outIP : A string containing the IP recieving the request \n 
+ * jobTime : An int containing the time to complete a job \n
  * 
  */
 class Request{
