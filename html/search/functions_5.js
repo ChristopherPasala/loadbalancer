@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['webserver',['Webserver',['../classWebserver.html#ac2a6f51bcc54efaaf5f4773a7c24f009',1,'Webserver::Webserver()'],['../classWebserver.html#ac66530e2c75f4489f3fd0a37d1265a21',1,'Webserver::Webserver(string name)']]]
+  ['setfinished',['setFinished',['../classWebserver.html#a385a32307e09550c301660581bada2e5',1,'Webserver']]],
+  ['setname',['setName',['../classWebserver.html#aa4a2355e2a69cd811173efe85b158525',1,'Webserver']]],
+  ['setrequest',['setRequest',['../classWebserver.html#af579724e554c818287932988c0de111e',1,'Webserver']]]
 ];

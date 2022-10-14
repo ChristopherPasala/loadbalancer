@@ -14,6 +14,9 @@ using namespace std;
  * 
  * 
  */
+
+/*! \file */
+
 /**
  * @brief You will be able to test the load balancer using this. One is able to execute this using the makefile
  * 
